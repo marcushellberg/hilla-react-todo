@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import * as cn from 'classnames';
 import type { ReactElement } from 'react';
 
 export default function TodoView(): ReactElement<unknown> | null {

@@ -1,7 +1,7 @@
 import { AppLayout } from '@hilla/react-components/AppLayout.js';
 import { DrawerToggle } from '@hilla/react-components/DrawerToggle.js';
 import { Scroller } from '@hilla/react-components/Scroller.js';
-import cn from 'classnames';
+import * as cn from 'classnames';
 import { PropsWithChildren, ReactElement, useReducer } from 'react';
 import { Outlet, useHref, useLocation, useNavigate } from 'react-router-dom';
 import { Nav, NavItem } from '../thirdParty.js';
