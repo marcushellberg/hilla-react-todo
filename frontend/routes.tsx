@@ -1,13 +1,14 @@
 import MainLayout from 'Frontend/views/MainLayout.js';
-import TodoView from 'Frontend/views/todo/TodoView.js';
-import { createBrowserRouter } from 'react-router-dom';
+import TodoView from 'Frontend/views/TodoView';
+import {createBrowserRouter} from 'react-router-dom';
+import AboutView from "Frontend/views/AboutView";
 
 const router = createBrowserRouter([
   {
-    element: <MainLayout />,
+    element: <MainLayout/>,
     children: [
-      { path: '/', element: <TodoView /> },
-      { path: '/todo', element: <TodoView /> },
+      {path: '/', element: <TodoView/>},
+      {path: '/about', element: <AboutView/>},
     ],
   },
 ]);

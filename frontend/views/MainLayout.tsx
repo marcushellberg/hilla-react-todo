@@ -1,13 +1,16 @@
 import {AppLayout} from '@hilla/react-components/AppLayout.js';
 import {DrawerToggle} from '@hilla/react-components/DrawerToggle.js';
 import {NavLink, Outlet} from 'react-router-dom';
+import './MainLayout.css';
 
 export default function MainLayout() {
-
   return (
     <AppLayout className="block h-full">
       <div slot="drawer" className="p-m">
-        <NavLink to="todo">Todos</NavLink>
+        <ul className="list-none px-0">
+          <li><NavLink to="">Todos</NavLink></li>
+          <li><NavLink to="about">About</NavLink></li>
+        </ul>
       </div>
 
       <header slot="navbar" className="flex gap-m items-center">
